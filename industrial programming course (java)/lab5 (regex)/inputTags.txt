@@ -1,0 +1,17 @@
+<!--...-->
+<p align=?>
+<h1>text</h1>
+<table cell spacing=9> </table>
+<title> text </title>
+<hr width=10> text
+<body bgcolor=#FFFFFF> </body>
+<img src="name">
+<select multiple name="NAME" size=?> text </select>
+<!--...-->>
+<p align=?<>
+<h1>te<xt</h1>
+<table cell spacing==6>
+<title> text <title>
+<hr width=>
+<hr width>
+<img src="name>
