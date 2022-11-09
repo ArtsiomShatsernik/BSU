@@ -6,10 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StringServiceController {
 
-    @RequestMapping("/threeTimes")
-    public StringService threeTime(@RequestParam(value = "string1") String string1) {
+    @RequestMapping("/multiString")
+    public StringService multiString(@RequestParam(value = "string") String string1,
+                                     @RequestParam(value = "times") int times) {
         StringService serv = new StringService(string1);
-        serv.threeString();
+        serv.multiString(times);
         return serv;
     }
    @RequestMapping("/stringCon")

@@ -13,8 +13,13 @@ public class StringService {
         builder.append(string2);
         result = builder.toString();
     }
-    public void threeString() {
-        result = string1 + string1 + string1;
+    public void multiString(int times)
+    {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < times; i++) {
+            builder.append(string1);
+        }
+        result = builder.toString();
     }
     public String getResult() {
         return result;

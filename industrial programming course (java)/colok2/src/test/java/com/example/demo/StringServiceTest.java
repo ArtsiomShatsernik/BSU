@@ -14,13 +14,13 @@ class StringServiceTest {
     }
 
     @Test
-    void threeString() {
+    void multiString() {
         StringService service1 = new StringService("xa");
-        service1.threeString();
+        service1.multiString(3);
         assertEquals("xaxaxa", service1.getResult());
         StringService service2 = new StringService("sr");
-        service2.threeString();
-        assertEquals("srsrsr", service2.getResult());
+        service2.multiString(5);
+        assertEquals("srsrsrsrsr", service2.getResult());
     }
 
 
