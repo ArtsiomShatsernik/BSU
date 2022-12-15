@@ -4,19 +4,18 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
+import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, CertificateException, NoSuchAlgorithmException, KeyStoreException {
+    public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, GeneralSecurityException {
         ArrayList <String> files = new ArrayList<>();
         files.add("Book.xml");
         files.add("Book.json");
         ArchivingLib.packJar(files,"testFiles");
         UnpackingFactory.unpackFile("testFiles.jar");
-        CryptoLib.encrypt();
+        CryptoLib.encrypt("Book.xml", "123456789");
+        CryptoLib.decrypt("encrypted_Book.xml","123456789");
         ContactList contactList = new ContactList("Book.xml");
         System.out.println(contactList.getInfo("375297600590"));
         System.out.println(contactList.findByName("Андрухович"));
