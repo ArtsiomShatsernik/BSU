@@ -83,7 +83,9 @@ public class ArchivingLib {
             while ((len = inputStream.read(buffer)) > 0)
                 zipOut.write(buffer, 0, len);
             zipOut.closeEntry();
+            inputStream.close();
         }
+        zipOut.close();
     }
 
     public static void packZip(String zipName) throws IOException {
@@ -99,7 +101,9 @@ public class ArchivingLib {
             while ((len = inputStream.read(buffer)) > 0)
                 zipOut.write(buffer, 0, len);
             zipOut.closeEntry();
+            inputStream.close();
         }
+        zipOut.close();
     }
     public static  void unpackingZip(String zipName) {
         byte[] buffer = new byte[1024];
@@ -133,7 +137,7 @@ public class ArchivingLib {
             throw new RuntimeException(e);
         }
     }
-    static ArrayList<String> formFiles() {
+    private static ArrayList<String> formFiles() {
         ArrayList<String> files = new ArrayList<>();
         Scanner in = new Scanner(System.in);
         String file;

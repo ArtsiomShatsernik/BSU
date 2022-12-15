@@ -12,10 +12,9 @@ public class Main {
         ArrayList <String> files = new ArrayList<>();
         files.add("Book.xml");
         files.add("Book.json");
-        ArchivingLib.packJar(files,"testFiles");
-        UnpackingFactory.unpackFile("testFiles.jar");
+        ArchivingLib.packZip("testFiles");
         CryptoLib.encrypt("Book.xml", "123456789");
-        CryptoLib.decrypt("encrypted_Book.xml","123456789");
+        CryptoLib.decrypt("encrypted_Book.xml", "123456789");
         ContactList contactList = new ContactList("Book.xml");
         System.out.println(contactList.getInfo("375297600590"));
         System.out.println(contactList.findByName("Андрухович"));
