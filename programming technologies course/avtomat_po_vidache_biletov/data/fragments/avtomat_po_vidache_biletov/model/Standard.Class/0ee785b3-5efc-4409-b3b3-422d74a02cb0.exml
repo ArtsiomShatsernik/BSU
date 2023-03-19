@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Деньги" version="4">
+  <OBJECT>
+    <ID name="Деньги" mc="Standard.Class" uid="0ee785b3-5efc-4409-b3b3-422d74a02cb0"/>
+    <PID name="General Diagram" mc="Standard.Package" uid="e45e00ae-5379-4027-9b0b-c3413ca1a841"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Деньги]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <ID name="entity" mc="Infrastructure.Stereotype" uid="76ee057e-2d6a-4d8c-9440-6f58d62c0825"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

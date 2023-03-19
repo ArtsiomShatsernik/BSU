@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Кнопки автомата" version="4">
+  <OBJECT>
+    <ID name="Кнопки автомата" mc="Standard.Class" uid="f236e324-26e5-40c6-9b1c-69dab6a0ecda"/>
+    <PID name="Buy ticket diagram" mc="Standard.Package" uid="cccca197-d7f3-4ba2-9859-2104a3eaa10f"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Кнопки автомата]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <ID name="control" mc="Infrastructure.Stereotype" uid="86e2d40b-f191-4434-b695-627d952c789e"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

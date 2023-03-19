@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="avtomat_po_vidache_biletov" version="4">
+  <OBJECT>
+    <ID name="avtomat_po_vidache_biletov" mc="Infrastructure.DiagramSet" uid="e89847d9-4f4d-48ed-8ec1-b1d6d631620a"/>
+    <PID name="avtomat_po_vidache_biletov" mc="Standard.Project" uid="f5121036-598a-45a0-951b-66735f0ef130"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[avtomat_po_vidache_biletov]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

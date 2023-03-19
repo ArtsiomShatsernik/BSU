@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Use Case View" version="4">
+  <OBJECT>
+    <ID name="Use Case View" mc="Standard.Package" uid="946e3bf1-acd2-46bc-871c-bc0221a387ad"/>
+    <PID name="avtomat_po_vidache_biletov" mc="Standard.Package" uid="c7df42ea-9b5c-4294-81ff-881d837c22da"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Use Case View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Персонал" mc="Standard.Actor" uid="12cca720-8870-435e-94f9-c569b85780c2"/>
+        <COMPID name="Пассажир" mc="Standard.Actor" uid="5f7eeef3-9883-4c7d-b46e-2ac204099b6e"/>
+        <COMPID name="Обслуживание автомата" mc="Standard.UseCase" uid="d2c8a65d-cef3-4fa9-a419-9449b1835115"/>
+        <COMPID name="Покупка билета" mc="Standard.UseCase" uid="a6ce26ae-9d4d-43e4-aed7-f8ef599b574b"/>
+        <COMPID name="Загрузка/выгрузка денег" mc="Standard.UseCase" uid="162f0be5-9133-4c27-9afc-a508e6658375"/>
+        <COMPID name="Загрузка бумаги" mc="Standard.UseCase" uid="810809b8-0c22-43e3-8f4e-204c473599cf"/>
+        <COMPID name="Сохранение данных" mc="Standard.UseCase" uid="e749e4fd-e70e-4cc5-8d03-61f5ceecf4f6"/>
+        <COMPID name="Выбор маршрута" mc="Standard.UseCase" uid="00f5875f-dde1-4802-9d8d-96d13df8a3c5"/>
+        <COMPID name="Оплата билета" mc="Standard.UseCase" uid="05225674-3e2c-4644-87d0-13d0bd67613d"/>
+        <COMPID name="Выдача сдачи/билета" mc="Standard.UseCase" uid="5b746297-9a69-4709-80dc-5378fbb74e21"/>
+        <COMPID name="Отмена операции" mc="Standard.UseCase" uid="c8e4072d-01ca-4ad4-9063-12e40cc982fa"/>
+        <COMPID name="Сервер" mc="Standard.Actor" uid="f602c040-47c8-4ac5-af84-a9b01cade309"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Main" mc="Standard.UseCaseDiagram" uid="dd9d6713-5f25-4699-a2e2-6f774e73c3dd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

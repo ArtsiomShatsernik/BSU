@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Обслуживание автомата" version="4">
+  <OBJECT>
+    <ID name="Обслуживание автомата" mc="Standard.UseCase" uid="d2c8a65d-cef3-4fa9-a419-9449b1835115"/>
+    <PID name="Use Case View" mc="Standard.Package" uid="946e3bf1-acd2-46bc-871c-bc0221a387ad"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Обслуживание автомата]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Used">
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="fe098c4b-6887-4512-95ff-103703b10705"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Загрузка/изъятие денег" mc="Standard.UseCase" uid="162f0be5-9133-4c27-9afc-a508e6658375"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="c3e069a9-7269-4228-a04a-a69534c5fd29"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Загрузка бумаги" mc="Standard.UseCase" uid="810809b8-0c22-43e3-8f4e-204c473599cf"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="3605294b-e33b-421b-a2d2-4be7951cb6c7"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Данный вариант использования позволяет обслуживающему 
+персоналу автомата пополнять бумагу для печати билетов,
+ а также забирать деньги из автомата в конце смены
+ и вносить их при недостатке средств для выдачи сдачи клиентам.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="e872c5b1-6787-4e75-bcb8-b0cb0a7f4c4a"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="568a7b47-2f4c-40a0-afc4-75676e7a6837"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="fd56fe6b-c9f7-4139-b928-1ae22d238851"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Основной поток.
+1. Обслуживающий персонал получает доступ к сервисной консоли.
+2. В зависимости от причины обслуживания (включение автомата, 
+выключение автомата, экстренное обслуживание автомата во время смены),
+персоналом выполняется одно из необходимых для в этой ситуации действий.
+3. Персонал завершает обслуживание автомата.
+3.1 Закрывает ящик с деньгами, при его открытии.
+3.2 Выключает сервисную консоль.
+3.3 Закрывает отделение с сервисной консолью на замок.
+
+Подчинённые потоки.
+2A. Включение автомата в начале дня.
+1. Персонал пополняет запасы бумаги в автомате.
+2. Пополняет запасы денег для сдачи в автомате.
+3. Включение автомата.
+
+2Б. Выключение автомата в конце дня.
+1. Персонал проверяет техническую исправность автомата.
+2. Выключение автомата.
+3. Производит изъятие денег, накопившихся за день, из автомата.
+
+3В. Экстренное обслуживание автомата.
+1. На консоли персонал узнаёт причину отправки сигнала об экстренном обслуживании.
+2. В зависимости от причины происходит пополнение денег, необходимых
+ для выдачи сдачи клиентам, или бумаги, для печати билетов.
+
+Альтернативные потоки.
+2A.3 Автомат неисправен.
+1. Сообщить в центр управления.
+2. Перейти к пункту 3 основного потока.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="abd6fff4-812f-4a07-90b4-a9e868041e58"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Перед началом данного варианта использования 
+персонал должен открыть специальное 
+отделение в автомате, закрываемое замком,
+чтобы получить доступ к сервисной консоли.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="be4dd540-2f53-4f23-9611-bfb2e74131e5"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[При завершении этого варианта использования автомат
+либо начнёт свою работу, при обслуживании 
+в начале рабочего дня,
+либо завершит работу, при обслуживании в конце рабочего дня,
+либо продолжит работу, при экстренном обслуживании.
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

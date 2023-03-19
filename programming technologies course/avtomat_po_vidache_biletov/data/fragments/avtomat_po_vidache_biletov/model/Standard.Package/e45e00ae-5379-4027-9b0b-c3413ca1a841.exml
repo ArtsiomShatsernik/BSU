@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="General Diagram" version="4">
+  <OBJECT>
+    <ID name="General Diagram" mc="Standard.Package" uid="e45e00ae-5379-4027-9b0b-c3413ca1a841"/>
+    <PID name="Class Diagram" mc="Standard.Package" uid="434788ed-83f9-4f3e-bcaa-08839d639ee8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[General Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Персонал" mc="Standard.Class" uid="103baae6-1bc3-41ff-8dff-0fd76e1dba2e"/>
+        <COMPID name="Пассажир" mc="Standard.Class" uid="a4365cef-c819-49ba-ae5a-be6a3721bc20"/>
+        <COMPID name="Сервер" mc="Standard.Class" uid="275c3aa9-1c58-4153-b4fd-180d4d3d738c"/>
+        <COMPID name="Билет" mc="Standard.Class" uid="a7030aac-bdd3-43ec-9c87-d4e5fdc90c40"/>
+        <COMPID name="Хранилище" mc="Standard.Class" uid="bbd0526b-ec6b-485d-b392-c3c28e1edd06"/>
+        <COMPID name="Деньги" mc="Standard.Class" uid="0ee785b3-5efc-4409-b3b3-422d74a02cb0"/>
+        <COMPID name="Бумага" mc="Standard.Class" uid="bdc00f35-0529-44b9-b665-bba2d92a7e0e"/>
+        <COMPID name="Автомат" mc="Standard.Class" uid="412e9454-b869-42e7-8a55-6c20e29f31f5"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="General class view" mc="Standard.ClassDiagram" uid="7b2793f8-e516-43c4-b00e-1595f8061379"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Class Diagram" version="4">
+  <OBJECT>
+    <ID name="Class Diagram" mc="Standard.Package" uid="434788ed-83f9-4f3e-bcaa-08839d639ee8"/>
+    <PID name="avtomat_po_vidache_biletov" mc="Standard.Package" uid="c7df42ea-9b5c-4294-81ff-881d837c22da"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Class Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Buy ticket diagram" mc="Standard.Package" uid="cccca197-d7f3-4ba2-9859-2104a3eaa10f"/>
+        <COMPID name="General Diagram" mc="Standard.Package" uid="e45e00ae-5379-4027-9b0b-c3413ca1a841"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

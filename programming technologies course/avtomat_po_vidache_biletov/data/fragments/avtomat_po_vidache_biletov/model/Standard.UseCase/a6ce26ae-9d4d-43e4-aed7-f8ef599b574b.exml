@@ -1,0 +1,181 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Покупка билета" version="4">
+  <OBJECT>
+    <ID name="Покупка билета" mc="Standard.UseCase" uid="a6ce26ae-9d4d-43e4-aed7-f8ef599b574b"/>
+    <PID name="Use Case View" mc="Standard.Package" uid="946e3bf1-acd2-46bc-871c-bc0221a387ad"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Покупка билета]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Used">
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="396fa290-722b-43e5-9338-ac106e65ac4c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Выбор маршрута" mc="Standard.UseCase" uid="00f5875f-dde1-4802-9d8d-96d13df8a3c5"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="49202799-bb05-4b97-84ea-e1eae64daf5b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Оплата билета" mc="Standard.UseCase" uid="05225674-3e2c-4644-87d0-13d0bd67613d"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="3a733d83-0256-4773-904a-8930297b1e20"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Данный вариант использования позволяет пассажиру приобрести билет.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="87e15f21-293c-4518-8272-afb10f5c1b2f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="constraint" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="9d6b867a-3da3-445c-ac38-fdcaa6b06de7"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[...]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="non-functional constraint" mc="Infrastructure.NoteType" uid="00bc0c08-0000-242c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="fdc07c58-d6a3-4783-9174-e901c632d345"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Основной поток событий
+1. Пассажир выбирает направление, пункт отправления и прибытия, время и дату поездки
+2. На информационном табло автомата выдаётся сообщение "Введите деньги" 
+3. Пассажир вносит деньги в автомат
+4. Автомат выдает билет и сдачу
+5. Автомат сохраняет информацию о покупке
+
+Подчинённые потоки событий
+1А. Выбор направления
+1. Пассажир нажимает кнопку "Выбор направления"
+2. На информационном табло автомата выдаётся сообщение "Выберите направление"
+3. Пассажир выбирает направление с помощью кнопок "Вверх" и "Вниз"
+4. Пассажир нажимает кнопку "Выбор"
+1Б. Выбор пункта отправления и прибытия
+1. Пассажир нажимает кнопку "Выбор пункта отправления и прибытия"
+2. На информационном табло автомата выдаётся сообщение "Выберите пункт отправления"
+3. Пассажир выбирает пункт отправления с помощью кнопок "Вверх" и "Вниз"
+4. Пассажир нажимает кнопку "Выбор"
+5. На информационном табло автомата выдаётся сообщение "Выберите пункт прибытия"
+6. Пассажир выбирает пункт прибытия с помощью кнопок "Вверх" и "Вниз"
+7. Пассажир нажимает кнопку "Выбор"
+1В. Выбор даты и времени
+1. Пассажир нажимает кнопку "Выбор даты и времени"
+2. Пассажир выбирает дату и время с помощью кнопок "Вверх" и "Вниз"
+3. Пассажир нажимает кнопку "Выбор"
+4А. Выдача билета
+1. Автомат выдаёт билет через принтер для печати билета
+2. На информационном табло автомата выдаётся сообщение "Заберите билет"
+3. Пассажир забирает билет
+4Б. Выдача сдачи
+1. Если пассажир внёс больше денег, чем необходимо, автомат выдаёт сдачу через лоток для выдачи денег
+2. На информационном табло автомата выдаётся сообщение "Заберите сдачу"
+3. Пассажир забирает сдачу
+
+Альтернативные потоки событий
+1Г.2А.3А. Пассажир нажал кнопку возврат
+1. Автомат выдаёт внесённые пассажиром деньги через лоток для выдачи денег
+2. На информационном табло автомата выдаётся сообщение "Заберите деньги"
+3. Пассажир забирает деньги
+4. Автомат удаляет информацию о покупке билета
+4В. В автомате нет денег для сдачи
+1. На информационном табло автомата выдаётся сообщение "Невозможно выдать сдачу"
+2. Выполняются события потока 1Г.2А.3А
+
+Автомат принимает только бумажные купюры номиналом 5, 10, 20 и монеты номиналом 1, 2 рублей
+При выборе даты и времени поездки бронь должна проводится не раньше чем за 10 суток]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="exception" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="5d896c4e-bfea-436e-bb17-7188c931b99d"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Отсутствует.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="precondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="38a66928-2c77-4b4b-830a-5325090cd92c"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[В случае удачной покупки билета пассажир получает билет и, если необходимо, сдачу, а автомат сохраняет информацию о покупке. В оюратном случае пассажир получает возврат денег.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="postcondition" mc="Infrastructure.NoteType" uid="00bc0b8c-0000-2517-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

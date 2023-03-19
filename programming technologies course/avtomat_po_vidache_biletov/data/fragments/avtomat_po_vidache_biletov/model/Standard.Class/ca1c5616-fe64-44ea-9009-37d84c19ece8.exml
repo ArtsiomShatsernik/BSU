@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Информационное табло" version="4">
+  <OBJECT>
+    <ID name="Информационное табло" mc="Standard.Class" uid="ca1c5616-fe64-44ea-9009-37d84c19ece8"/>
+    <PID name="Buy ticket diagram" mc="Standard.Package" uid="cccca197-d7f3-4ba2-9859-2104a3eaa10f"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Информационное табло]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <ID name="boundary" mc="Infrastructure.Stereotype" uid="dc01d369-0c43-4ed6-9cd3-5abe817bd998"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

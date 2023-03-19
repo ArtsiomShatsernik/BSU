@@ -1,0 +1,8 @@
+#Sun Mar 19 20:47:59 MSK 2023
+org.modelio.app.diagram.editor.OpenedDiagrams2='General class view' {7b2793f8-e516-43c4-b00e-1595f8061379} Standard.ClassDiagram
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/MSI/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.app.diagram.editor.OpenedDiagrams1='Activity Activity diagram' {4029337b-fa10-42c4-aeaa-462223b4ee80} Standard.ActivityDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams0='Main' {dd9d6713-5f25-4699-a2e2-6f774e73c3dd} Standard.UseCaseDiagram
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/MSI/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/MSI/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///C\:/Users/MSI/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
