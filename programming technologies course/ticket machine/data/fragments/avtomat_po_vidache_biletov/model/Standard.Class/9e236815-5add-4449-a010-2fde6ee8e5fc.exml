@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Автомат" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Пассажир" version="4">
   <OBJECT>
-    <ID name="Автомат" mc="Standard.Class" uid="a4071680-515d-4b7e-b456-eeb7b1653bdc"/>
+    <ID name="Пассажир" mc="Standard.Class" uid="9e236815-5add-4449-a010-2fde6ee8e5fc"/>
     <PID name="Buy ticket diagram" mc="Standard.Package" uid="cccca197-d7f3-4ba2-9859-2104a3eaa10f"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Автомат]]></ATT>
+      <ATT name="Name"><![CDATA[Пассажир]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="saveData" mc="Standard.Operation" uid="c702f471-6581-4f50-a8a9-a45c8a036343"/>
+          <ID name="buyTicket" mc="Standard.Operation" uid="7921f5bf-9e27-45fe-b9f5-d6c7213584c6"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -25,80 +25,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[saveData]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="setTicketInfo" mc="Standard.Operation" uid="beaeeb83-27b9-44a4-af89-3f6241fc6e5d"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[setTicketInfo]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Descriptor">
-              <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="46d8e32e-edfb-4ceb-bf8a-0a0c1360c5f4"/>
-                <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
-                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Model">
-                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="giveTicket" mc="Standard.Operation" uid="e2f43625-d2f2-473e-b07e-aaa314708439"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[giveTicket]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="giveChange" mc="Standard.Operation" uid="02374719-54b2-49a1-b200-3fbaa38b92a2"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[giveChange]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="cancel" mc="Standard.Operation" uid="3844ca41-28fc-4e2c-8b42-e7b7da2f8c59"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[cancel]]></ATT>
+            <ATT name="Name"><![CDATA[buyTicket]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -106,7 +33,7 @@
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="storage" mc="Standard.Attribute" uid="ac9c2edf-a775-423e-b2f5-0e9b722f26f6"/>
+          <ID name="money" mc="Standard.Attribute" uid="4e1f2dc0-e989-4306-9dda-0e6b670888a4"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -120,17 +47,17 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[storage]]></ATT>
+            <ATT name="Name"><![CDATA[money]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <ID name="Хранилище" mc="Standard.Class" uid="bbd0526b-ec6b-485d-b392-c3c28e1edd06"/>
+              <FOREIGNID name="double" mc="Standard.DataType" uid="00000004-0000-0010-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="ticket" mc="Standard.Attribute" uid="f41b9b5b-8aaa-4dea-b9a5-0e42ef749360"/>
+          <ID name="tickets[]" mc="Standard.Attribute" uid="ad24899f-f20e-4431-971c-833cbe1739dd"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -144,7 +71,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[ticket]]></ATT>
+            <ATT name="Name"><![CDATA[tickets[]]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -156,7 +83,7 @@
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="saveData" mc="Standard.AssociationEnd" uid="273cbf78-45a9-47bc-a8bd-87d68308cbae"/>
+          <ID name="buyTicket" mc="Standard.AssociationEnd" uid="5d6081ae-7d85-48d5-9729-24181a1f255a"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -169,16 +96,16 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[saveData]]></ATT>
+            <ATT name="Name"><![CDATA[buyTicket]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Сервер" mc="Standard.Class" uid="a7f8b100-0a57-4fd6-9cf3-c015501e373a"/>
+              <ID name="Автомат" mc="Standard.Class" uid="a4071680-515d-4b7e-b456-eeb7b1653bdc"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="1b8451f8-233d-4c16-9888-7398bf30037a"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="36eb2def-70e4-4add-ae3c-cd73921fa036"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -196,11 +123,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="saveData" mc="Standard.AssociationEnd" uid="273cbf78-45a9-47bc-a8bd-87d68308cbae"/>
+                    <COMPID name="buyTicket" mc="Standard.AssociationEnd" uid="5d6081ae-7d85-48d5-9729-24181a1f255a"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="ffb1d692-e2f2-4eb2-9f67-0b1978b35302"/>
+                      <ID name="" mc="Standard.Association" uid="b314394c-275e-4fb0-8ea3-0199e6857154"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -212,7 +139,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="ffb1d692-e2f2-4eb2-9f67-0b1978b35302"/>
+              <COMPID name="" mc="Standard.Association" uid="b314394c-275e-4fb0-8ea3-0199e6857154"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -220,20 +147,6 @@
       <LINK relation="Extension">
         <ID name="entity" mc="Infrastructure.Stereotype" uid="76ee057e-2d6a-4d8c-9440-6f58d62c0825"/>
       </LINK>
-      <COMP relation="DependsOnDependency">
-        <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="d7ead75b-0de5-4ab3-8b18-40016ee2894d"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="Билет" mc="Standard.Class" uid="d3ee6095-c20b-4e86-8d0e-fb242c7633e6"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>
