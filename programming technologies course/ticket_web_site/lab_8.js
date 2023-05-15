@@ -38,12 +38,6 @@ for (var i = 0; i < 20; i++) {
 	tickets.push(ticketTemp)
 }
 
-// for (var value of tickets) {
-	// console.log(value)
-// }
-
-
-
 class TicketsClass {
 	constructor(Objs) {
 		this.Objs = Objs
