@@ -1,0 +1,14 @@
+﻿  residual.cpp
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(88,74): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(143,55): message : see reference to function template instantiation 'std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>> transpose<long double>(std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>)' being compiled
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(52,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(143,66): message : see reference to function template instantiation 'std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>> matrix_product<long double>(std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>,std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>)' being compiled
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(117,70): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(156,93): message : see reference to function template instantiation 'std::vector<long double,std::allocator<long double>> transpose_to_vector<long double>(std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>)' being compiled
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(72,59): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programms\Visual Studio 2022\C#saves\Householder\Minimum_residual\residual.cpp(163,6): message : see reference to function template instantiation 'T first_matrix_norm<long double>(std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>)' being compiled
+          with
+          [
+              T=long double
+          ]
+  Minimum_residual.vcxproj -> D:\Programms\Visual Studio 2022\C#saves\Householder\x64\Debug\Minimum_residual.exe

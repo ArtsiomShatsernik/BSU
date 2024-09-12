@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Programms\Visual Studio 2022\C#saves\Householder\test\main.cpp(63,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  test.vcxproj -> D:\Programms\Visual Studio 2022\C#saves\Householder\x64\Debug\test.exe

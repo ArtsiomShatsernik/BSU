@@ -1,0 +1,13 @@
+﻿  householder.cpp
+D:\Programms\Visual Studio 2022\C#saves\Householder\Householder\householder.cpp(52,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programms\Visual Studio 2022\C#saves\Householder\Householder\householder.cpp(191,79): message : see reference to function template instantiation 'std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>> matrix_product<long double>(std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>,std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>)' being compiled
+D:\Programms\Visual Studio 2022\C#saves\Householder\Householder\householder.cpp(72,59): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programms\Visual Studio 2022\C#saves\Householder\Householder\householder.cpp(197,83): message : see reference to function template instantiation 'T first_matrix_norm<long double>(std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>)' being compiled
+          with
+          [
+              T=long double
+          ]
+D:\Programms\Visual Studio 2022\C#saves\Householder\Householder\householder.cpp(98,61): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programms\Visual Studio 2022\C#saves\Householder\Householder\householder.cpp(120,62): message : see reference to function template instantiation 'std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>> transpose<long double>(std::vector<long double,std::allocator<long double>>)' being compiled
+D:\Programms\Visual Studio 2022\C#saves\Householder\Householder\householder.cpp(189,59): message : see reference to function template instantiation 'std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>> householder_method<long double>(int,std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>,std::vector<std::vector<long double,std::allocator<long double>>,std::allocator<std::vector<long double,std::allocator<long double>>>>,bool)' being compiled
+  Householder.vcxproj -> D:\Programms\Visual Studio 2022\C#saves\Householder\x64\Debug\Householder.exe
